@@ -3,14 +3,14 @@ import { shuffleTeams } from './utils.js';
 
 // starting from a hard-coded array of names
 const teams = [
-		'Turtles',
-		'Hummingbirds',
-		'Dolphins',
-		'Lambs',
-		'Lions',
-		'Giraffes',
-		'Wolves',
-		'Pellicans'
+		'Steven',
+		'Acil',
+		'Surya',
+		'Randy',
+		'Vivien',
+		'Adit',
+		'Ivan',
+		'Epin'
 	];
 
 // create a custom store with a .shuffle function, which allow to shuffle the array described in the store

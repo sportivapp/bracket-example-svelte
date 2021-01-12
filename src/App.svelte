@@ -1,18 +1,12 @@
 <script>
-	// components behind the application
 	import Header from './Header.svelte';
 	import Controls from './Controls.svelte';
 	import Bracket from './Bracket.svelte';
-	
-	// store describing the teams and the shuffle function
 	import { names } from './stores.js';
-	// following the shuffle event shuffle the teams with the function provided on the store
 	function handleShuffle() {
 		names.shuffle();
 	}
 	
-	// based on the array of names, create an array of objects for the bracket
-	// this to provide an identifier as to distinguish the elements in the {#each} block
 	$: bracket = $names.map(name => ({
 		name,
 		id: Math.random()
@@ -41,7 +35,7 @@
 	}
 </style>
 
-<Header title="Who's going to win?"/>
+<Header title="Sportiv"/>
 
 <Controls on:shuffle={handleShuffle}/>
 
